@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swad cafe</title>
+</head>
+<body>
+    <article>
+    <h2>Reservation</h2>
+    <nav>
+        <ul>
+          <li>
+            <a href="menu.html" target="_blank">Menu</a>
+        </li>
+          <li>
+            <a href="about.html" target="_blank">About Us</a>
+        </li>
+        </ul>
+      </nav>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Booking a Table</legend>
+    <p>
+        <label for="Name" >Name:</label>
+        <input type="text" name="Name" id="Name" placeholder="April" autocomplete="on" required>
+    </p>
+    <p>
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" id="surname" placeholder="Smith" autocomplete="on" required>
+    </p>
+    <p>
+        <label for="Mobile">Mobile No:</label>
+        <input type="tel" name="Mobile" id="Mobile" placeholder="8888888888" required autofocus>
+    </p>
+    <p>
+        <label for="Email" >Email:</label>
+        <input type="Email" name="email" id="Email" placeholder="ews@email.com" required>
+    </p>
+    <p>
+        <label for="Date">Date</label>
+        <input type="date" name="Date" id="Date">
+    </p>
+    <p>
+        <label for="Time">Time</label>
+        <br>
+        <input type="radio" name="Booking" id="morning" value="time">
+        <label for="morning">9-12am</label>
+        <input type="radio" name="Booking" id="evening" value="time">
+        <label for="evening">1-4 pm</label>
+        <input type="radio" name="Booking" id="Night" value="time">
+        <label for="Night">4-10 pm</label>
+    </p>
+    <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Book </button>
+    </p>
+    </fieldset>
+    </form>
+    </article> 
+</body>
+</html>
